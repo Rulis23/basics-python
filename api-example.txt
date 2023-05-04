@@ -1,0 +1,147 @@
+# Escenario de una app de comida a domicilio con ejemplos de métodos HTTP
+
+GET 	http://api.eats.com/restaurants
+Accept:	application/json
+
+Status Code:	200 (OK)
+Content-type:	application/json
+
+{
+	"restaurants":[
+	{
+		"id": 1,
+		"name": "McDonalds"
+		"score": 8
+	}
+	{
+		"id": 2,
+		"name": "PizzaHut"
+		"score": 9
+	}
+	{
+		"id": 3,
+		"name": "Subway"
+		"score": 7
+	}
+	]
+}
+
+
+	
+POST 	http://api.eats.com/restaurants
+Accept:	application/json
+
+Body:
+{
+	"name": "KFC"
+	"score": 9
+}
+
+Status Code:	201 (Created)
+Content-type:	application/json
+
+{
+	"id": 4
+	"name": "KFC"
+	"score": 9
+}
+
+
+PUT 	http://api.eats.com/restaurants/4
+Accept:	application/json
+
+Body:
+{
+	"score": 8
+}
+
+Status Code:	201 (Created)
+Content-type:	application/json
+
+{
+	"id": 4
+	"name": "KFC"
+	"score": 8
+}
+
+
+DELETE 	http://api.eats.com/restaurants/4
+Accept:	application/json
+
+Status Code:	200 (Cok)
+Content-type:	application/json
+
+
+-----------------------------------------
+
+
+GET 	http://api.eats.com/repartidores
+Accept:	application/json
+
+Status Code:	200 (OK)
+Content-type:	application/json
+
+{
+	"repartidores":[
+	{
+		"id": 1,
+		"name": "Raul"
+		"score": 10
+	}
+	{
+		"id": 2,
+		"name": "Juan"
+		"score": 8
+	}
+	{
+		"id": 3,
+		"name": "Luis"
+		"score": 7
+	}
+	]
+}
+
+
+	
+POST 	http://api.eats.com/repartidores
+Accept:	application/json
+
+Body:
+{
+	"name": "Roberto"
+	"score": 9
+}
+
+Status Code:	201 (Created)
+Content-type:	application/json
+
+{
+	"id": 4
+	"name": "Roberto"
+	"score": 9
+}
+
+
+PUT 	http://api.eats.com/repartidores/4
+Accept:	application/json
+
+Body:
+{
+	"score": 8
+}
+
+Status Code:	201 (Created)
+Content-type:	application/json
+
+{
+	"id": 4
+	"name": "Roberto"
+	"score": 8
+}
+
+
+DELETE 	http://api.eats.com/repartidores/4
+Accept:	application/json
+
+Status Code:	200 (OK)
+Content-type:	application/json
